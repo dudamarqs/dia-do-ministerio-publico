@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Kreon:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset basico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #FFFDF8;
+    color: #2C2424;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+
+header {
+    background-color: #595449;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+.header {
+    margin-top: 1rem;
+    transform: scale(1.3);
+}
+
+
+#hero_content {
+    padding: 3.125rem 25rem 6.25rem 25rem; /* cima, direita, baixo, esquerda */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 13rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #2C2424;
+    font-weight: 600;
+    font-size: 1.50rem;
+}
+
+
+/* CSS para o Sublinhado Deslizante */
+.nav_links a {
+    position: relative;
+    color: #2C2424; /* Cor do texto */
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease; /* Transição para a cor do texto */
+}
+
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Posiciona a linha abaixo do texto */
+    width: 100%;
+    height: 3px; /* Espessura da linha */
+    background: #2C2424; /* Cor da linha */
+    transform: scaleX(0); /* Inicia invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+
+/* Exibe a linha ao passar o mouse */
+.nav_links a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* Mantém a linha visível para o link ativo */
+.nav_links a.active::after {
+    transform: scaleX(1); /* Mantém o sublinhado */
+}
+
+
+/* Mudança de cor ao passar o mouse */
+.nav_links a:hover {
+    color: #2C2424;
+}
+
+
+/* Opcional: Muda a cor do texto para o link ativo */
+.nav_links a.active {
+    color: #2C2424;
+}
+
+
+#hero_content h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.paragraph_1 {
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+
+
+.areas {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaçamento entre os grupos */
+    margin: 0 auto; /* Centraliza o contêiner */
+    max-width: 2000px; /* Largura máxima para o contêiner */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.areas_1, .areas_2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Organiza imagens em colunas ajustáveis */
+    gap: 1.5rem; /* Espaçamento entre os itens */
+}
+
+
+.item {
+    text-align: center; /* Centraliza o conteúdo dentro do item */
+}
+
+
+.item_img img {
+    max-width: auto; /* Imagem responsiva */
+    height: 300px; /* Preserva proporções */
+}
+
+
+.area_texto {
+    margin-top: 0.5rem; /* Espaçamento entre a imagem e o texto */
+    font-size: 1.5rem;
+    color: #333; /* Cor do texto */
+    font-weight: 600;
+}
+
+
+.paragraph_2 {
+    font-size: 1.5625rem;
+    font-weight: 500;
+}
+
+
+.footer {
+    background-color: #2C2424;
+    color: #FFFDF8;
+    padding: 3rem 25rem 1rem 25rem;
+}
+
+
+.footer a {
+    color: #FFFDF8;
+    text-decoration: none;
+}
+
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.footer_nav_links a {
+    font-size: 1.5rem;
+}
+
+
+.privacy_terms {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.3rem;
+}
+
+
+.contact_credits {
+    display: flex;
+    gap: 20rem;
+    margin-top: 3rem;
+}
+
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+
+.contact h1, p {
+    margin-bottom: 1rem;
+}
+
+
+.media {
+    display: flex;
+    text-decoration: none;
+    gap: 1.2rem;
+}
+
+
+.media img {
+    height: 3rem;
+}
+
+
+.credits h1 {
+    margin-bottom: 1rem;
+}
+
+
+.credits_links {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
+
+
+.final {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    margin-top: 2rem;
+}
+
+
+.final img {
+    transform: scale(1.2);
+    margin-bottom: 0.5rem;
+}
