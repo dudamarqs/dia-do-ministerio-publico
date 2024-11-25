@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Kreon:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFDF8;
+    color: #2C2424;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.0625rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+header {
+    padding: 1rem 2rem; /* Espaçamento interno */
+    background-color: #2C2424; /* Cor de fundo opcional */
+    border-bottom: solid 0.125rem #e2e2e2; /* Linha inferior opcional */
+}
+
+/* Div principal do cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça a logo e os links */
+}
+
+/* Logo */
+.logo {
+    width: 18.75rem; /* Tamanho da logo */
+    height: auto;
+}
+
+/* Links de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFAF1;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+/* CSS para o Sublinhado Deslizante */
+.nav_links a {
+    position: relative;
+    color: #FFFAF1; /* Cor do texto */
+    text-decoration: none;
+    padding: 0.3125rem;
+    transition: color 0.3s ease; /* Transição para a cor do texto */
+}
+
+.nav_links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.125rem; /* Posiciona a linha abaixo do texto */
+    width: 100%;
+    height: 0.1875rem; /* Espessura da linha */
+    background: #FFFAF1; /* Cor da linha */
+    transform: scaleX(0); /* Inicia invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Exibe a linha ao passar o mouse */
+.nav_links a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Mantém a linha visível para o link ativo */
+.nav_links a.active::after {
+    transform: scaleX(1); /* Mantém o sublinhado */
+}
+
+/* Mudança de cor ao passar o mouse */
+.nav_links a:hover {
+    color: #FFFAF1;
+}
+
+/* Opcional: Muda a cor do texto para o link ativo */
+.nav_links a.active {
+    color: #FFFAF1;
+}
+
+#hero_content {
+    padding: 3.125rem 25rem 6.25rem 25rem; /* cima, direita, baixo, esquerda */;
+}
+
+#hero_content h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.noticia {
+    border: solid #E2E2E2 0.1875rem;
+    padding: 1.5625rem;
+    border-radius: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+.noticia:hover {
+    background-color: #dbdbdb; /* Define o cinza claro ao passar o mouse */
+}
+
+.noticia a {
+    text-decoration: none;
+}
+
+.noticia_container {
+    display: flex;
+    gap: 3rem;
+}
+
+.noticia_img {
+    width: 20.625rem;
+    height: 11.25rem;
+}
+
+.noticia_text {
+    width: 62.5rem;
+    color: #2C2424;
+}
+
+.noticia_text h3 {
+    font-size: 1.875rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.noticia_text p {
+    font-size: 1.25rem;
+    color: #a9a9a9;
+}
+
+.cadastro {
+    display: flex;
+    gap: 5rem;
+    margin-top: 4rem;
+}
+
+.cadastro_text {
+    font-size: 1.875rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.cadastro_text p {
+    width: 50rem;
+    text-align: justify;
+}
+
+/* Estilização do formulário */
+form {
+    width: 100%; /* Aumente a largura para 80% */
+    max-width: 50rem; /* Limite a largura máxima para evitar que fique muito grande em telas maiores */
+    margin: 0 auto;
+    padding: 1.25rem;
+    border: solid #E2E2E2 0.1875rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+}
+
+/* Títulos */
+form h2 {
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Grupos de formulário */
+.form-group {
+    margin-bottom: 2rem;
+}
+
+/* Labels */
+form label, .form-group p {
+    display: block;
+    margin-bottom: 0.3125rem;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.3rem; /* Tamanho do texto dos labels */
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1.5rem;
+    border: solid #E2E2E2 0.1875rem;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+/* Botão de envio */
+form input[type="submit"] {
+    width: 100%;
+    padding: 0.625rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: #555;
+    border: none;
+    border-radius: 0.7688rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #dbdbdb;
+    color: #2C2424;
+    border: #736C5E 0.125rem solid;
+}
+
+/* Grupo de botões de rádio */
+.radio-group {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.3125rem;
+}
+
+.footer {
+    background-color: #2C2424;
+    color: #FFFDF8;
+    padding: 3rem 25rem 1rem 25rem;
+}
+
+.footer a {
+    color: #FFFDF8;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer_nav_links a {
+    font-size: 1.5rem;
+}
+
+.final {
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.final img {
+    transform: scale(1.2);
+    margin-bottom: 0.5rem;
+}

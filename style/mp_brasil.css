@@ -39,7 +39,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 2rem; /* 32px em rem */
+    gap: 2rem;
     margin: 0;
     padding: 0;
 }
@@ -96,79 +96,54 @@ nav ul li a {
     padding: 3.125rem 25rem 6.25rem 25rem; /* cima, direita, baixo, esquerda */
 }
 
-.hero_image {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 0.3125rem 0 0.625rem 0; /* 5px e 10px em rem */
-}
-
-.hero_image img {
-    height: 40rem; /* 640px em rem */
-}
-
-.hero_title {
-    text-align: center;
-    padding: 0.625rem; /* 10px em rem */
-}
-
-.hero_title h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#hero_content h1 {
     font-size: 3rem; /* 48px em rem */
+    margin-top: 2rem; /* 32px em rem */
     margin-bottom: 1rem; /* 16px em rem */
-}
-
-.hero_title h3 {
-    font-size: 1.5rem; /* 24px em rem */
-    font-style: normal;
-    font-weight: 600;
-    margin-bottom: 1rem; /* 16px em rem */
-    color: #595449;
-}
-
-.div_line {
-    border: solid #595449 0.0625rem; /* 1px em rem */
-    margin: 0 0 5rem 0; /* 80px em rem */
 }
 
 .paragraph_1 {
+    font-size: 1.5625rem; /* 25px em rem */
+    font-weight: 500;
+}
+
+.paragraph_2 {
     display: flex;
-    gap: 17rem; /* 272px em rem */
+    gap: 5rem; /* 80px em rem */
     margin-bottom: 3rem; /* 48px em rem */
 }
 
-.paragraph_1_text {
+.paragraph_2_text {
     font-size: 1.5625rem; /* 25px em rem */
     font-weight: 500;
-    width: 45%; /* Ajustado em relação à largura da tela */
+    width: 43.75rem; /* 700px em rem */
 }
 
-.image_p1 {
-    width: 32%; /* Ajuste proporcional */
+.image_p2 img {
+    width: 43.75rem; /* 700px em rem */
     height: auto;
 }
 
-.paragraph_2_3 {
+.paragraph_3_4 {
     font-size: 1.5625rem; /* 25px em rem */
     font-weight: 500;
 }
 
-.paragraph_4 {
+.paragraph_5 {
     display: flex;
-    gap: 17rem; /* 272px em rem */
+    gap: 4rem; /* 64px em rem */
+    margin-top: 4rem; /* 64px em rem */
 }
 
-.paragraph_4_text {
+.image_p5 img{
+    width: 43.75rem; /* 700px em rem */
+    height: auto;
+}
+
+.paragraph_5_text {
     font-size: 1.5625rem; /* 25px em rem */
     font-weight: 500;
-    width: 50%;
-}
-
-.image_p4 {
-    width: 32%; /* Ajuste proporcional */
-    height: auto;
+    width: 43.75rem; /* 700px em rem */
 }
 
 .footer {
